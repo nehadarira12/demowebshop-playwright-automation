@@ -1,0 +1,25 @@
+{
+  "name": "demowebshop-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright + Cucumber (BDD) automation framework for Demo Web Shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "bdd": "cucumber-js --require-module ts-node/register --require features/**/*.ts --format json:./test-results/cucumber-report.json --publish-quiet",
+    "bdd:report": "node cucumber-report.js",
+    "bdd:run": "npm run bdd && npm run bdd:report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.48.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "open": "^11.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

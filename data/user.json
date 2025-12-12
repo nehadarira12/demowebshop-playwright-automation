@@ -1,0 +1,15 @@
+{
+    "billing": {
+      "firstName": "Neha",
+      "lastName": "Kumari",
+      "email": "neha@example.com",
+      "country": "India",
+      "city": "Abu Dhabi",
+      "address1": "Test Street 123",
+      "address2": "Test Street 123",
+      "zip": "12345",
+      "phone": "0501234567"
+    }
+
+  }
+  
